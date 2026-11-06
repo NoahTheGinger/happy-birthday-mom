@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Happy Birthday, Mom!</title>
+  <meta name="description" content="A little website, just for you.">
+
+  <!-- Link preview (what shows up when the URL is texted) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Happy Birthday, Mom 🎂">
+  <meta property="og:description" content="A little website, just for you.">
+  <meta property="og:url" content="https://noahtheginger.github.io/happy-birthday-mom/">
+  <meta property="og:image" content="https://noahtheginger.github.io/happy-birthday-mom/images/side-by-side.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="#FBF6F0">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <header class="hero">
+    <p class="eyebrow">November 5, 2026</p>
+    <h1 id="hero-title">Happy Birthday,<br><em>Mom</em></h1>
+    <p class="lede">A little website, just for you.</p>
+    <a class="scroll-cue" href="#funny" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 4v15m0 0-6-6m6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </header>
+
+  <main>
+    <!-- 01 · Funny -->
+    <section class="moment" id="funny">
+      <figure class="polaroid tilt-left reveal">
+        <img src="images/laughing.jpg" width="306" height="306" alt="Young Noah and Mom laughing together, cheek to cheek">
+        <figcaption>Laughing since day one</figcaption>
+      </figure>
+      <div class="copy reveal">
+        <p class="number">01</p>
+        <h2>You're hilarious.</h2>
+        <p>You've been making me laugh for as long as I can remember. Some things never change: you're still the funniest person I know, and I'm still laughing at your jokes.</p>
+        <p class="aside">(Most of them.)</p>
+      </div>
+    </section>
+
+    <!-- 02 · Smart -->
+    <section class="moment flip" id="smart">
+      <figure class="polaroid tilt-right reveal">
+        <img src="images/student-of-the-month.jpg" width="468" height="352" alt="Mom and young Noah smiling, Noah holding his Student of the Month certificate">
+        <figcaption>Exhibit A: where do you think I got it from?</figcaption>
+      </figure>
+      <div class="copy reveal">
+        <p class="number">02</p>
+        <h2>You're brilliant. <em>Still.</em></h2>
+        <p>I know you keep saying you're losing it. Respectfully, you're wrong. You're as sharp as you've ever been, and I have proof.</p>
+
+        <div class="diagnostic">
+          <p class="diagnostic-title">Mom's Brain: Official Status Check</p>
+          <div class="meter" aria-hidden="true"><span></span></div>
+          <ul class="results" aria-live="polite"></ul>
+          <button type="button" class="btn" id="run-check">Run the check</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 · By my side -->
+    <section class="moment" id="by-my-side">
+      <figure class="polaroid tilt-left reveal">
+        <img src="images/swimming.jpg" width="468" height="351" alt="Mom floating in clear blue water in a life jacket, holding young Noah close">
+        <figcaption>Keeping me afloat, then and now</figcaption>
+      </figure>
+      <div class="copy reveal">
+        <p class="number">03</p>
+        <h2>You've always been by my side.</h2>
+        <p>Through thick and thin, the highs, the lows, and everything in between, you've stuck with me. Whenever I needed holding up, you held me up. Sometimes literally.</p>
+      </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="closing" id="closing">
+      <figure class="polaroid polaroid-lg reveal">
+        <img src="images/side-by-side.jpg" width="441" height="331" alt="Mom with her arm around Noah on a sunny day out together">
+        <figcaption>Side by side, always</figcaption>
+      </figure>
+
+      <div class="reveal">
+        <h2>Thank you for being my mom.</h2>
+        <p>I love you more than a website can say, but I figured I'd give it a try anyway.</p>
+      </div>
+
+      <div class="wish reveal">
+        <button type="button" class="candle" id="candle" aria-label="Blow out the candle and make a wish" aria-pressed="false">
+          <span class="flame"></span>
+          <span class="smoke"></span>
+          <span class="wick"></span>
+          <span class="stick"></span>
+        </button>
+        <p class="wish-text" id="wish-text" aria-live="polite">Tap the candle and make a wish.</p>
+      </div>
+
+      <p class="signature reveal">Happy birthday.<br><span>Love, Noah</span></p>
+    </section>
+  </main>
+
+  <footer>Made with love (and a little code)</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
